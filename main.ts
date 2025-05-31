@@ -25,4 +25,6 @@ control.simmessages.onReceived("GIT",function(msg) {
 
 mySprite.sayText("Noraml doo doo!")
 
+game.onUpdate(function() {
 control.simmessages.send("ready", null);
+})
