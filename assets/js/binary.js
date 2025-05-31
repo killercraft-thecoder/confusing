@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v2.0.56/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.1","target":"arcade","targetVersion":"2.0.56","repo":"killercraft-thecoder/confusing"}
-// total=1775673 new=26.79% cached=68.96% other=4.25%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v2.0.56/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.2","target":"arcade","targetVersion":"2.0.56","repo":"killercraft-thecoder/confusing"}
+// total=1775735 new=26.79% cached=68.96% other=4.25%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -457,7 +457,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P717412(s) {
+function _main___P717580(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -856,21 +856,21 @@ switch (step) {
   case 36:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P700203_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex704790);
+    r0 = pxsim.image.ofBuffer(_hex717521);
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = globals.Player___700410;
     s.callLocIdx = 63; s.pc = 37; return s.tmp_0;
   case 37:
     r0 = s.retval;
-    globals.mySprite___702278 = (r0);
+    globals.mySprite___717518 = (r0);
     s.tmp_0 = control_simmessages_onReceived__P698346_mk(s);
     s.tmp_0.arg0 = "GIT";
-    s.tmp_0.arg1 = inline__P704793;
+    s.tmp_0.arg1 = inline__P717524;
     s.callLocIdx = 65; s.pc = 38; return s.tmp_0;
   case 38:
     r0 = s.retval;
     s.tmp_0 = Sprite_sayText__P700341_mk(s);
-    s.tmp_0.arg0 = globals.mySprite___702278;
+    s.tmp_0.arg0 = globals.mySprite___717518;
     s.tmp_0.arg1 = "Noraml doo doo!";
     s.tmp_0.arg2 = undefined;
     s.tmp_0.arg3 = false;
@@ -879,17 +879,18 @@ switch (step) {
     s.callLocIdx = 66; s.pc = 39; return s.tmp_0;
   case 39:
     r0 = s.retval;
+    r0 = pxsim_pxtcore.sendMessage("ready", null, undefined);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-_main___P717412.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P717412.continuations = [  ]
+_main___P717580.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P717580.continuations = [  ]
 
-function _main___P717412_mk(s) {
+function _main___P717580_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P717412, depth: s.depth + 1,
+        parent: s, fn: _main___P717580, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -917,7 +918,7 @@ const _hex703038 = pxsim.BufferMethods.createBufferFromHex("87042000200000000000
 const _hex703040 = pxsim.BufferMethods.createBufferFromHex("870420002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000cc00000000000000b0bbbbbbbbcb00c0cd000000000000001bddddddddbd0c1ccd000000000000b011cbccccccbc0c1ccd000000000000b01d6c666666bc0cbccd000000000000b01d6c616661bc0c1ccd000000000000b01d6c161666bccc1bcd000000000000b01d6c666166bcccbbcd000000000000b01d6c666666bccc1bcd000000000000b01d6c666661bccc1bcd000000000000b01d6c666661bcccbbcd000000000000b01d6c666661bccc1bcd000000000000b01d6c666666bc0c1ccd000000000000b01dcbccccccbc0cbccd000000000000c0b1bbbbbbbbbb0cdccb000000000000c0bbbbbbbbbbcb00dc0c00000000000000cccccccccc0c00cc000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
 const _hex703042 = pxsim.BufferMethods.createBufferFromHex("87042000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004004000000000000000000000000000054450000000000000000000000440b00bbbb00b0440000000000000040550b00000000b0550400000000000040b5000044bb00005b04000000000000b00b0044ddddbb00b00b0000000000000000405d55d5dd0b00000000000000000000d4555555ddbd0000000000000000000054555555d5bd0000000000000000b44055555555d5dd0b4b000000000040b54055555555d5dd0b5b040000000040b54055555555d5dd0b5b040000000000b44055115555d5dd0b4b000000000000000054115555d5bd00000000000000000000d4555555ddbd00000000000000000000405d55d5dd0b0000000000000000b00b0044ddddbb00b00b00000000000040b5000044bb00005b0400000000000040550b00000000b0550400000000000000440b00bbbb00b0440000000000000000000000544500000000000000000000000000004004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
 const _hex703044 = pxsim.BufferMethods.createBufferFromHex("870420002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000bbbb00000000000000000000000000b055bb00bbbbbb000000000000000000b0b5bdbcbbbbddcb0000000000000000b0dbcb5b5555bbdd0c00000000000000b0cbdcbdbb5b55dbcd0000000000000000c0dddb11d15bb5bd0c00000000000000bbbd111111b155bb0c00000000000000db1b111111115bb5cb00000000000000db1bb11d1199b9d5cb00000000000000db1b11bb9199b955cb000000000000005b1b11b19b99995bcb000000000000005b1d1111bb99995ccb00000000000000b0b511bbbb99995ccb00000000000000b0d51d919999d95b0b00000000000000005bdb919999c9d50b0000000000000000b0d51b99d9bcb5000000000000000000005bd5bbbc550b00000000000000000000b05b5555bd000000000000000000000000b0bbbb00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
-const _hex704790 = pxsim.BufferMethods.createBufferFromHex("87041000100000000000e0ee0c00000000002e22c200000000e042e22e0c000000e025e2eee2000000e02422e2c2000000e02222e2c2000000c82e2222ee000000682c22e2cecc000068c8ec2e22e20c608700e04222eece608700e02522eec2760800e02422e2c2768866c82222e2c2767677662c22eec276888888c822220c8608000000eecc00")
+const _hex717521 = pxsim.BufferMethods.createBufferFromHex("87041000100000000000e0ee0c00000000002e22c200000000e042e22e0c000000e025e2eee2000000e02422e2c2000000e02222e2c2000000c82e2222ee000000682c22e2cecc000068c8ec2e22e20c608700e04222eece608700e02522eec2760800e02422e2c2768866c82222e2c2767677662c22eec276888888c822220c8608000000eecc00")
 
 
 
@@ -1429,7 +1430,7 @@ function gameOverConfig_inline__P702859_mk(s) {
 
 
 
-function inline__P704793(s) {
+function inline__P717524(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1444,7 +1445,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     s.tmp_0 = Sprite_sayText__P700341_mk(s);
-    s.tmp_0.arg0 = globals.mySprite___702278;
+    s.tmp_0.arg0 = globals.mySprite___717518;
     s.tmp_0.arg1 = "your using GIT to run me.";
     s.tmp_0.arg2 = undefined;
     s.tmp_0.arg3 = false;
@@ -1457,12 +1458,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P704793.info = {"start":672,"length":74,"line":20,"column":37,"endLine":23,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["msg"]}
+inline__P717524.info = {"start":672,"length":74,"line":20,"column":37,"endLine":23,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["msg"]}
 
-function inline__P704793_mk(s) {
+function inline__P717524_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P704793, depth: s.depth + 1,
+        parent: s, fn: inline__P717524, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -46424,7 +46425,7 @@ const sprites_StaticObstacle__C700428_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["mySprite___702278"])
+const breakpoints = setupDebugger(1, ["mySprite___717518"])
 
-return _main___P717412
+return _main___P717580
 })
