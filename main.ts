@@ -24,3 +24,5 @@ control.simmessages.onReceived("GIT",function(msg) {
 })
 
 mySprite.sayText("Noraml doo doo!")
+
+control.simmessages.send("ready", null);
